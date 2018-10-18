@@ -1,0 +1,70 @@
+/*
+Theme Name:  Serene Child
+Theme URI:  http://www.elegantthemes.com/gallery/serene
+Version:  1.3
+Description:  Serene Child Theme
+Author:  Elegant Themes
+Author URI:  http://www.elegantthemes.com
+Template: serene
+License:  GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:  gray, orange, light, white, one-column, flexible-width, custom-colors, custom-menu, featured-images, post-formats, theme-options, threaded-comments, translation-ready
+ */
+
+ @font-face {
+	font-family: Day Roman;
+		src: url('http://localhost/mySite/wp-content/themes/serene-child/fonts/DAYROM__.ttf')  format('truetype');
+		font-weight: normal;
+	}
+
+
+
+body {
+	font-size: 22px;
+	color: #666;
+	background-color: #fafafa;
+	font-weight: 200;
+}
+
+body, input, textarea {
+	font-family: 'Day Roman', 'Times', serif;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.img-flex {
+    flex-grow: 0;
+}
+
+.headshot-right{
+	max-width: 250px;
+	margin-left: 2em;
+	box-shadow: 2px 2px 2px #252525;
+}
+
+.headshot-left{
+	max-width: 250px;
+	margin-right: 2em;
+	box-shadow: 2px 2px 2px #252525;
+}
+
+.text-flex {
+    margin: 0.5em 0.5em 0.5em 0.5em;
+	flex-grow: 1;   
+	font-size: 0.8em; 
+}
+
+@media only screen and (max-width: 980px) {
+    .container-flex {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .img-flex {
+        margin: 0em;
+    }
+}
